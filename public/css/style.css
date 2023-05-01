@@ -1,0 +1,30 @@
+* {
+    font-family: 'Roboto';
+}
+
+footer, main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+li {
+    display: inline;
+    text-align: center;
+    font-size: 100%;
+    padding-left: 20px;
+    margin: 20px;
+    flex: 1%;
+}
