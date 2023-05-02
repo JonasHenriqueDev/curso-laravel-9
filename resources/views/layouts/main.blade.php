@@ -36,7 +36,9 @@
         </nav>
     </header>
     <main>
-        @yield('content')
+        <div class="div-main">
+            @yield('content')
+        </div>
     </main>
     <footer>
         <p>Events &copy; 2023</p>

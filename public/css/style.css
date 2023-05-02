@@ -1,8 +1,11 @@
 * {
     font-family: 'Roboto';
+    background-color: #3F3F3F;
+    color: white;
 }
 
-footer, main{
+footer,
+main {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -10,7 +13,6 @@ footer, main{
 
 a {
     text-decoration: none;
-    color: black;
 }
 
 nav {
