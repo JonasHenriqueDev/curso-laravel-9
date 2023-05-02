@@ -1,6 +1,6 @@
 @extends('layouts.main')
 
-@section('title', 'Events')
+@section('title', 'Eventos')
 
 @section('content')
     @foreach ($events as $event)
