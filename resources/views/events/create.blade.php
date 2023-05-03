@@ -4,8 +4,9 @@
 
 @section('content')
     <div id="formulario">
-        <form action="/events" method="POST">
+        <form action="/events" method="POST" enctype="multipart/form-data">
             @csrf
+            Imagem do Evento: <br><input type="file" name="image" placeholder="Nome do evento"><br>
             Evento: <br><input type="text" name="title" placeholder="Nome do evento"><br>
             Cidade: <br><input type="text" name="city" placeholder="Cidade em que o evento irá acontecer"><br>
             O evento é privado? <br><select type="radio" name="private">

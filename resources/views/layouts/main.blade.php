@@ -42,7 +42,7 @@
         </div>
     </main>
     <footer>
-        <p>Events &copy; 2023</p>
+        <p>Eventos &copy; 2023</p>
     </footer>
 </body>
 
