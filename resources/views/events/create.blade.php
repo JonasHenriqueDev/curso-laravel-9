@@ -13,6 +13,7 @@
                 <option value="0">Não</option>
                 <option value="1">Sim</option>
             </select><br>
+            Data do Evento: <br><input type="date" id="input-date" name="event_date"><br>
             Descrição: <br>
             <textarea type="text" name="description" rows="5" cols="55" placeholder="Uma breve descrição do evento, seja criativo!"></textarea><br>
             <input type="submit" value="Criar Evento">

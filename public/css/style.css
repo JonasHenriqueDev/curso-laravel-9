@@ -9,11 +9,12 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    
 }
 
 footer {
     font-style: italic;
+    font-size: 25px;
 }
 
 h1 {
@@ -59,7 +60,7 @@ textarea {
     display: flex;
     flex-wrap: wrap;
     width: 60%;
-    margin-left: 20%;
+    margin-left: 22%;
 }
 
 #div-event {
@@ -81,8 +82,20 @@ textarea {
 
 #img-event {
     width: 90%;
+    border-radius: 10px;
 }
 
 #p-event {
+    font-size: 10;
     background-color: #686767;
+}
+
+#h1-event {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-style: bold;
+    font-size: 25px;
+    background-color: #686767;
+    margin-bottom: 0;
 }
