@@ -33,8 +33,8 @@ class EventController extends Controller
         $event->event_date = $event_date;
 
         //image upload
-        if($request->hasFile('image') && $request->file('image')->isValid()){
-            
+        if ($request->hasFile('image') && $request->file('image')->isValid()) {
+
             $requestImage = $request->image;
             $extension = $requestImage->extension();
 
@@ -42,11 +42,16 @@ class EventController extends Controller
 
             $requestImage->move(public_path('img/events'), $imageName);
             $event->image = $imageName;
-
         }
 
         $event->save();
 
         return redirect('/');
+    }
+
+    public function show($id)
+    {
+        $event = Event::findOrFail($id);
+        return view('events.show', ['event' => $event]);
     }
 }
