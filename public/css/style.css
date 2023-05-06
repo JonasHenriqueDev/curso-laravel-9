@@ -2,19 +2,27 @@
     font-family: 'Roboto';
     background-color: #3F3F3F;
     color: white;
+    margin: 0;
+    padding: 0;
 }
+
 
 footer,
 main {
     display: flex;
     justify-content: center;
     align-items: center;
+}
 
+header {
+    margin-bottom: 20px;
 }
 
 footer {
     font-style: italic;
     font-size: 25px;
+    margin-top: 30px;
+    background-color: #686767
 }
 
 h1 {
@@ -34,17 +42,8 @@ nav {
     justify-content: center;
     align-items: center;
     font-size: 25px;
+    background-color: #686767;
 }
-
-li {
-    display: inline;
-    text-align: center;
-    font-size: 100%;
-    padding-left: 20px;
-    margin: 20px;
-    flex: 1%;
-}
-
 
 input {
     font-size: 20px;
@@ -54,6 +53,20 @@ input {
 
 textarea {
     font-size: 20px;
+}
+
+li {
+    display: inline;
+    text-align: center;
+    font-size: 100%;
+    padding-left: 20px;
+    margin: 20px;
+    flex: 1%;
+    background-color: #686767;
+}
+    
+ul {
+    background-color: #686767;
 }
 
 #event-container {
@@ -103,6 +116,7 @@ textarea {
 }
 
 #p-event {
+
     font-size: 10;
     background-color: #686767;
 }
@@ -111,6 +125,7 @@ textarea {
     font-size: 10;
     color: rgba(255, 255, 255, 0.562);
     background-color: #686767;
+    margin-top: 20px;
 }
 
 #h1-event {
@@ -121,6 +136,7 @@ textarea {
     font-size: 25px;
     background-color: #686767;
     margin-bottom: 0;
+    margin-top: 25px;
 }
 
 #btn {
@@ -130,7 +146,46 @@ textarea {
 
 #event_date {
     background-color: #686767;
-    ;
+    padding-block: 15px;
     color: rgba(255, 255, 255, 0.562);
     margin-left: 5px;
+    margin-bottom: 20px;
+}
+
+#cabecalho {
+    padding-block: 35px;
+    background-color: #686767;
+}
+
+#rodape {
+
+    padding-block: 35px;
+    background-color: #686767;
+}
+
+#link-nav {
+    background-color: #686767;
+}
+
+#checkbox-items {
+    margin-top: 20px;
+    height: 20px;
+}
+
+#div-items {
+    display: flex;
+    justify-content: baseline;
+    align-items: baseline;
+    margin-bottom: 20px;
+    margin-top: 5px;
+}
+
+#items-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    padding-bottom: 50px;
+    margin-top: 10px;
+    background-color: #686767;
 }

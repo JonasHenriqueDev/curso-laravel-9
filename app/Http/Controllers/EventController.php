@@ -26,6 +26,7 @@ class EventController extends Controller
         $event->city = $request->city;
         $event->private = $request->private;
         $event->description = $request->description;
+        $event->items = $request->items;
 
         //formatação da data para o padrão brasileiro
         $requestDate = $request->event_date;
@@ -43,6 +44,7 @@ class EventController extends Controller
             $requestImage->move(public_path('img/events'), $imageName);
             $event->image = $imageName;
         }
+
 
         $event->save();
 

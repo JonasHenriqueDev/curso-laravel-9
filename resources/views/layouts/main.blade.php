@@ -18,22 +18,24 @@
 
 <body>
     <header>
-        <nav>
-            <ul>
-                <li>
-                    <a href="/">Eventos</a>
-                </li>
-                <li>
-                    <a href="/events/create">Criar Eventos</a>
-                </li>
-                <li>
-                    <a href="/">Entrar</a>
-                </li>
-                <li>
-                    <a href="/">Cadastrar</a>
-                </li>
-            </ul>
-        </nav>
+        <div id="cabecalho">
+            <nav>
+                <ul id="ul-nav">
+                    <li id="li-nav">
+                        <a id="link-nav" href="/">Eventos</a>
+                    </li>
+                    <li id="li-nav">
+                        <a id="link-nav" href="/events/create">Criar Eventos</a>
+                    </li>
+                    <li id="li-nav">
+                        <a id="link-nav" href="/">Entrar</a>
+                    </li>
+                    <li id="li-nav">
+                        <a id="link-nav" href="/">Cadastrar</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
     </header>
     <main>
         <div class="div-main">
@@ -42,7 +44,9 @@
         </div>
     </main>
     <footer>
-        <p>Eventos &copy; 2023</p>
+        <div id="rodape">
+            Eventos &copy; 2023
+        </div>
     </footer>
 </body>
 

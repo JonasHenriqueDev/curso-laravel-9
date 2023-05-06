@@ -17,8 +17,16 @@
             <h1 id="h1-event">Cidade do Evento:</h1>
             <br> {{ $event->city }}
             <h1 id="h1-event">Data do Evento:</h1>
-            <br> {{ $event->event_date }}
             </p>
+            <p id="event_date">
+                {{ $event->event_date }}
+            </p>
+            <h1 id="h1-event">O evento conta com:</h1>
+            <div id="items-list">
+                    @foreach ($event->items as $item)
+                        - {{ $item }} <br>
+                    @endforeach
+            </div>
             <a id="btn" href="#">Confirmar presença</a>
         </div>
     </div>
