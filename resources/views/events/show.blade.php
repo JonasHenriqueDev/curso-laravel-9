@@ -7,7 +7,7 @@
 
     <div id="div-events-show">
         <div id="div-event-show">
-            <img id="img-event" src="/img/events/{{ $event->image }}" alt="">
+            <img id="img-event" src="/img/events/{{ $event->image }}" onError="this.onerror=null;this.src='../img/events/39cbaf65710c6ec7ff756301e8689282.png';">
             <p id="p-event-participantes">X participantes confirmados</p>
             <p id="p-event">
             <h1 id="h1-event">Título do Evento:</h1>

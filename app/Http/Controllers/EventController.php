@@ -25,13 +25,16 @@ class EventController extends Controller
         $event->title = $request->title;
         $event->city = $request->city;
         $event->private = $request->private;
+        $event->event_date = $request->event_date;
         $event->description = $request->description;
         $event->items = $request->items;
 
         //formatação da data para o padrão brasileiro
-        $requestDate = $request->event_date;
+        
+        /*$requestDate = $request->event_date;
         $event_date = date('d-m-Y', strtotime($requestDate));
-        $event->event_date = $event_date;
+        $event->event_date = $event_date;*/
+
 
         //image upload
         if ($request->hasFile('image') && $request->file('image')->isValid()) {

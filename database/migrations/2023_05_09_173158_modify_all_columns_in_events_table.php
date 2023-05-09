@@ -12,7 +12,9 @@ return new class extends Migration
     public function up(): void
     {
         Schema::table('events', function (Blueprint $table) {
-            $table->date('event_date');
+            $table->string('title', 30)->change();
+            $table->text('description', 500)->change();
+            $table->string('city', 30)->change();
         });
     }
 
@@ -22,7 +24,9 @@ return new class extends Migration
     public function down(): void
     {
         Schema::table('events', function (Blueprint $table) {
-            $table->dropColumn('event_date');
+            $table->string('title')->change();
+            $table->text('description')->change();
+            $table->string('city')->change();
         });
     }
 };
