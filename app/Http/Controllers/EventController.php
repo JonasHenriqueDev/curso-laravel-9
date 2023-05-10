@@ -9,8 +9,19 @@ class EventController extends Controller
 {
     public function index()
     {
-        $events = Event::all();
-        return view('welcome', ['events' => $events]);
+        // lógica pra pesquisar eventos
+        $search = request('search');
+        
+
+        if ($search) {
+            $events = Event::where([
+                ['title', 'like', '%' . $search . '%']
+            ])->get();
+        } else {
+            $events = Event::all();
+        }
+
+        return view('welcome', ['events' => $events, 'search' => $search]);
     }
 
     public function create()
@@ -30,7 +41,7 @@ class EventController extends Controller
         $event->items = $request->items;
 
         //formatação da data para o padrão brasileiro
-        
+
         /*$requestDate = $request->event_date;
         $event_date = date('d-m-Y', strtotime($requestDate));
         $event->event_date = $event_date;*/

@@ -18,8 +18,14 @@
 
 <body>
     <header>
+        
         <div id="cabecalho">
             <nav>
+                <div id="search-div">
+                    <form id="search-form" action="/" method="GET">
+                        <input type="text" name="search" id="search" placeholder="Procurar...">
+                    </form>
+                </div>
                 <ul id="ul-nav">
                     <li id="li-nav">
                         <a id="link-nav" href="/">Eventos</a>
@@ -33,13 +39,18 @@
                     <li id="li-nav">
                         <a id="link-nav" href="/">Cadastrar</a>
                     </li>
+                    <li id="li-nav">
+
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div class="div-main">
+            
             <h1>@yield('title')</h1>
+            
             @yield('content')
         </div>
     </main>

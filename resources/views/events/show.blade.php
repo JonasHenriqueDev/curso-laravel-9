@@ -7,7 +7,8 @@
 
     <div id="div-events-show">
         <div id="div-event-show">
-            <img id="img-event" src="/img/events/{{ $event->image }}" onError="this.onerror=null;this.src='../img/events/39cbaf65710c6ec7ff756301e8689282.png';">
+            <img id="img-event" src="/img/events/{{ $event->image }}"
+                onError="this.onerror=null;this.src='../img/events/39cbaf65710c6ec7ff756301e8689282.png';">
             <p id="p-event-participantes">X participantes confirmados</p>
             <p id="p-event">
             <h1 id="h1-event">Título do Evento:</h1>
@@ -19,13 +20,13 @@
             <h1 id="h1-event">Data do Evento:</h1>
             </p>
             <p id="event_date">
-                {{ $event->event_date }}
+                {{ date('d-m-Y', strtotime($event->event_date)) }}
             </p>
             <h1 id="h1-event">O evento conta com:</h1>
             <div id="items-list">
-                    @foreach ($event->items as $item)
-                        - {{ $item }} <br>
-                    @endforeach
+                @foreach ($event->items as $item)
+                    - {{ $item }} <br>
+                @endforeach
             </div>
             <a id="btn" href="#">Confirmar presença</a>
         </div>

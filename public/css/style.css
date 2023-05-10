@@ -64,9 +64,13 @@ li {
     flex: 1%;
     background-color: #686767;
 }
-    
+
 ul {
     background-color: #686767;
+}
+
+#ul-nav{
+
 }
 
 #event-container {
@@ -186,5 +190,31 @@ ul {
     align-items: start;
     padding-bottom: 50px;
     margin-top: 10px;
+    background-color: #686767;
+}
+
+#search {
+    width: 200px;
+    height: 35px;
+    font-size: 15px;
+}
+
+#search-form{
+    width: 170px;
+}
+
+#h4-result {
+    margin-top: 10px;
+    color: red;
+    font-style: normal;
+}
+
+#search-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    margin-right: 35px;
+    margin-bottom: 13px;
     background-color: #686767;
 }
