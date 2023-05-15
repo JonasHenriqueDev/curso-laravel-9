@@ -69,8 +69,15 @@ ul {
     background-color: #686767;
 }
 
-#ul-nav{
-
+#form-nav{
+    display: inline;
+    text-align: center;
+    font-size: 100%;
+    padding-left: 0px;
+    margin: 20px;
+    margin-left: 0px;
+    flex: 1%;
+    background-color: #686767;
 }
 
 #event-container {

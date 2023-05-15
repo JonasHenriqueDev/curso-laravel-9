@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        
+
         <div id="cabecalho">
             <nav>
                 <div id="search-div">
@@ -33,24 +33,39 @@
                     <li id="li-nav">
                         <a id="link-nav" href="/events/create">Criar Eventos</a>
                     </li>
-                    <li id="li-nav">
-                        <a id="link-nav" href="/">Entrar</a>
-                    </li>
-                    <li id="li-nav">
-                        <a id="link-nav" href="/">Cadastrar</a>
-                    </li>
-                    <li id="li-nav">
 
-                    </li>
+                    @auth
+                        <li id="li-nav">
+                            <a id="link-nav" href="/dashboard">Meus eventos</a>
+                        </li>
+                        <li id="li-nav">
+                            <form id="form-nav" action="logout" method="POST">
+                                @csrf
+                                <a id="link-nav" href="/logout"
+                                    onclick="event.preventDefault();
+                                this.closest('form').submit();">Sair</a>
+                            </form>
+                        </li>
+                    @endauth
+                    @guest
+                        <li id="li-nav">
+                            <a id="link-nav" href="/login">Entrar</a>
+                        </li>
+                        <li id="li-nav">
+                            <a id="link-nav" href="/register">Cadastrar</a>
+                        </li>
+                        <li id="li-nav">
+                        </li>
+                    @endguest
                 </ul>
             </nav>
         </div>
     </header>
     <main>
         <div class="div-main">
-            
+
             <h1>@yield('title')</h1>
-            
+
             @yield('content')
         </div>
     </main>
